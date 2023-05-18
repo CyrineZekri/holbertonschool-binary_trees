@@ -2,13 +2,7 @@
 #include <stdio.h>
 #include "binary_trees.h"
 
-/**
- * binary_tree_height - Entry point.
- *@tree:the tree to be measured
- * Return: signed int
- */
-/**
- * max - finds maximum
+/** max - finds maximum
  *@x:an int
  *@y:an int
  * Return: signed int
@@ -24,11 +18,16 @@ int max(int x, int y)
 		return (y);
 	}
 }
+/**
+ * binary_tree_height - Entry point.
+ *@tree:the tree to be measured
+ * Return: signed int
+ */
 size_t binary_tree_height(const binary_tree_t *tree)
 {
 	int a;
 
-	if (tree == NULL)
+	if (!tree)
 	{
 		return (-1);
 	}
