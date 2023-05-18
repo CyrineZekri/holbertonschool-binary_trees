@@ -20,7 +20,7 @@ int max(int x, int y)
 	}
 
 	/**
-	 * binary_tree_height - Entry point
+	 * binary_tree_height - Entry point.
 	 *@tree:the tree to be measured
 	 * Return: signed int
 	 */
