@@ -3,6 +3,11 @@
 #include "binary_trees.h"
 
 /**
+ * binary_tree_height - Entry point.
+ *@tree:the tree to be measured
+ * Return: signed int
+ */
+/**
  *max- finds maximum
  *@x:an int
  *@y:an int
@@ -18,12 +23,6 @@ int max(int x, int y)
 	{
 		return (y);
 	}
-
-	/**
-	 * binary_tree_height - Entry point.
-	 *@tree:the tree to be measured
-	 * Return: signed int
-	 */
 }
 size_t binary_tree_height(const binary_tree_t *tree)
 {
@@ -31,7 +30,7 @@ size_t binary_tree_height(const binary_tree_t *tree)
 
 	if (tree == NULL)
 	{
-		return (-1);
+		return (0);
 	}
 	a = max(binary_tree_height(tree->left), binary_tree_height(tree->right));
 	return (a + 1);
