@@ -8,7 +8,7 @@
  * Return: signed int
  */
 /**
- *max- finds maximum
+ * max - finds maximum
  *@x:an int
  *@y:an int
  * Return: signed int
@@ -30,7 +30,7 @@ size_t binary_tree_height(const binary_tree_t *tree)
 
 	if (tree == NULL)
 	{
-		return (0);
+		return (-1);
 	}
 	a = max(binary_tree_height(tree->left), binary_tree_height(tree->right));
 	return (a + 1);
